@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phrase Fill-In Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Phrase Fill-In Game</h1>
+        <div id="phrase-container">
+            <p id="phrase">Loading phrase...</p>
+        </div>
+        <input type="text" id="user-input" placeholder="Enter the missing words">
+        <button id="submit-button" onclick="checkAnswer()">Submit</button>
+        <button id="next-button" onclick="nextPhrase()" style="display:none;">Next</button>
+        <div id="feedback"></div>
+
+        <!-- Button to view or hide all phrases -->
+        <button id="view-phrases-button" onclick="togglePhrases()">View All Phrases</button>
+        <ul id="phrases-list" style="display:none; text-align: left;"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
